@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Sarah Kunkel
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-avatar>
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+
+  <div class="ion-padding">
+    A FullStack Software Engineer.
+  </div>
+  <ion-list>
+      <ion-item>
+        <ion-label>First Name</ion-label>
+        <ion-label>Sarah</ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item>
+          <ion-label>Last Name</ion-label>
+          <ion-label>Kunkel</ion-label>
+        </ion-item>
+      </ion-list>
+  <ion-list>
+      <ion-item>
+        <ion-label>Date of Birth</ion-label>
+        <ion-datetime
+          disabled
+          displayFormat="MM/DD/YYYY"
+          [(ngModel)]="myDateOfBirth"
+        ></ion-datetime>
+      </ion-item>
+    </ion-list>
+
+
+    <button (click)='presentAlert()'>ALERT</button>
+    <br /> 
+    <ion-icon name="star-outline"></ion-icon>
+    <br /> 
+    <ion-icon name="moon"></ion-icon>
+    <br /> 
+    <ion-icon name="logo-instagram"></ion-icon>
+
+   
+</ion-content>
+
+
